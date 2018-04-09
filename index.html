@@ -37,12 +37,24 @@
        </button>
     </header>
     <main id="main-content">
-        <a href="index.html">homepage</a>
+        <a href="/">back to homepage</a>
     </main>
     <footer>
         tlab reboan 2018 - PWA
     </footer>
-
     <script src="app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDCgthZ9Zs8oC26H9YGEesf55ukEzzRH-w",
+            authDomain: "tr-pwa.firebaseapp.com",
+            databaseURL: "https://tr-pwa.firebaseio.com",
+            projectId: "tr-pwa",
+            storageBucket: "",
+            messagingSenderId: "594725230003"
+        };
+        firebase.initializeApp(config);
+    </script>
 </body>
 </html>

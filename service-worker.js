@@ -12,13 +12,8 @@ self.addEventListener('install', async event => {
 });
 
 self.addEventListener('fetch', event => {
-  event.respondWith(
-    new Response('<h1>no connection! check your connection</h1>', {
-      headers: {
-        'Content-Type': 'text/html'
-      }
-    })
-  )
+   const req = event.request;
+   event.respondWith(cacheFirst(req))
 });
 
 

@@ -35,6 +35,8 @@ header h1 {
 
 header button {
     outline: none;
+    background: transparent;
+    border: none;
 }
 
 main#main-content {
