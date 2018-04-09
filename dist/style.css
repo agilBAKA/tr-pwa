@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+}
+
+/* header */
+header {
+    padding: 15px;
+    background-color: #62ea08;
+    background-image: linear-gradient(252deg, #62ea08 0%, #2AF598 100%);
+    color: #26633c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    line-height: 24px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 1.3em;
+}
+
+header button {
+    outline: none;
+}
+
+main#main-content {
+    padding-top: 80px;
+    min-height: 80vh;
+}
+
+footer {
+    color: #2AF598;
+    padding: 15px;
+    font-size: 11px;
+}
