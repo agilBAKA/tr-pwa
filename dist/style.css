@@ -10,6 +10,9 @@
 
 body {
     font-family: 'Overpass', sans-serif;
+    padding-top: 50px;
+    font-size: 15px;
+    line-height: 25px;
 }
 
 /* header */
@@ -37,6 +40,10 @@ header.header--dark {
     color: #62ea08;
 }
 
+header.header--dark  a {
+    color: #62ea08;
+}
+
 header.header--dark svg {
     fill: #61ea0a;
 }
@@ -45,19 +52,67 @@ header h1 {
     font-size: 1.3em;
 }
 
-header button {
+header a {
     outline: none;
     background: transparent;
     border: none;
 }
 
 main#main-content {
-    padding-top: 80px;
+    padding: 15px;
     min-height: 80vh;
 }
 
-main#main-content  a {
-    text-align: center;
+ 
+.card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    background: #ffff;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 15px 0px;
+    color: #2f3346;
+    min-height: 125px;
+}
+.card.card--list {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-shadow: 0px 5px 38px 0px rgba(192, 195, 216, 0.4);
+    box-shadow: 0px 5px 38px 0px rgba(192, 195, 216, 0.4);
+    text-decoration: none
+}
+
+.card.card--list:focus {
+    background: #fafbff
+}
+
+.card.card--list .card__meta {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding-right: 15px
+}
+
+.card.card--list .card__cover {
+    min-width: 95px;
+    min-height: 95px;
+    background: #e4e4e4
+}
+
+h2.heading {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-box;
+    font-size: 1.125em;
+    line-height: 24px;
+    max-height: 87px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical
 }
 
 footer {
