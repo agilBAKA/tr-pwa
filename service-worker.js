@@ -11,6 +11,7 @@ const cacheFiles = [
 
 
 self.addEventListener('install', function(event) {
+  console.log('SW Installed!')
 
   event.waitUntil(
     caches.open(cacheVersionName)
@@ -18,7 +19,6 @@ self.addEventListener('install', function(event) {
         return cache.addAll(cacheFiles)
       })
   )
-  
 });
 
 self.addEventListener('activate', function() {
@@ -26,6 +26,8 @@ self.addEventListener('activate', function() {
 });
 
 
+
+FETCH
 self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.match(event.request)
